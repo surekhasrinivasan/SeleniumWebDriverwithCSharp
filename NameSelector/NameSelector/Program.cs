@@ -14,30 +14,30 @@ class Program
 
         if (element.Displayed)
         {
-            System.Console.WriteLine("Yes I can see the element!!");
-            //GreenMessage("Yes I can see the element!!");
+            //System.Console.WriteLine("Yes I can see the element!!");
+            GreenMessage("Yes I can see the element!!");
         }
         else
         {
-            System.Console.WriteLine("No I cannot see the element!!");
-            //RedMessage("No I cannot see the element!!");
+            //System.Console.WriteLine("No I cannot see the element!!");
+            RedMessage("No I cannot see the element!!");
         }
 
         driver.Quit();
     }
 
-    //    private static void RedMessage(string message)
-    //    {
-    //        Console.ForegroundColor = ConsoleColor.Red;
-    //        Console.WriteLine(message);
-    //        Console.ForegroundColor = ConsoleColor.White;
-    //    }
+    private static void RedMessage(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.White;
+    }
 
-    //    private static void GreenMessage(string message)
-    //    {
-    //        Console.ForegroundColor = ConsoleColor.Green;
-    //        Console.WriteLine(message);
-    //        Console.ForegroundColor = ConsoleColor.White;
-    //    }
+    private static void GreenMessage(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine(message);
+        Console.ForegroundColor = ConsoleColor.White;
+    }
 }
 
